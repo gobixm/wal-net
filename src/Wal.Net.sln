@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wal.Net", "Wal.Net\Wal.Net.csproj", "{BC985616-EAE3-4B2A-B493-9CE88A1AD76D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wal.Net.Tests", "Wal.Net.Tests\Wal.Net.Tests.csproj", "{238EFF3B-7BF1-4775-86E8-398A775F75FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wal.Net.Sample", "Wal.Net.Sample\Wal.Net.Sample.csproj", "{84F8D094-40FD-43D7-A8B0-0D68E59BB7D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC985616-EAE3-4B2A-B493-9CE88A1AD76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC985616-EAE3-4B2A-B493-9CE88A1AD76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC985616-EAE3-4B2A-B493-9CE88A1AD76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC985616-EAE3-4B2A-B493-9CE88A1AD76D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238EFF3B-7BF1-4775-86E8-398A775F75FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238EFF3B-7BF1-4775-86E8-398A775F75FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238EFF3B-7BF1-4775-86E8-398A775F75FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238EFF3B-7BF1-4775-86E8-398A775F75FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F8D094-40FD-43D7-A8B0-0D68E59BB7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F8D094-40FD-43D7-A8B0-0D68E59BB7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F8D094-40FD-43D7-A8B0-0D68E59BB7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F8D094-40FD-43D7-A8B0-0D68E59BB7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
