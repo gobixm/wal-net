@@ -1,3 +1,5 @@
+[![build and test](https://github.com/gobixm/wal-net/actions/workflows/build-and-test.yml/badge.svg?branch=master)](https://github.com/gobixm/wal-net/actions/workflows/build-and-test.yml)
+
 # Usage example
 ```csharp
 

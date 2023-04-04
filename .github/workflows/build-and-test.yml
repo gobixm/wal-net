@@ -13,6 +13,9 @@ env:
 
 jobs:
   build-and-test:
+    defaults:
+      run:
+        working-directory: ./src
 
     name: build-and-test-${{matrix.os}}
     runs-on: ${{ matrix.os }}
