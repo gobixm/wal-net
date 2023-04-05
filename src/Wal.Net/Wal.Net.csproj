@@ -8,6 +8,11 @@
         <Authors>Kirill Ivanov</Authors>
         <PackageTags>wal write ahead log transaction log</PackageTags>
         <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <Description>Simple Write Ahead Log implementation</Description>
+        <PackageProjectUrl>https://github.com/gobixm/wal-net</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/gobixm/wal-net</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
