@@ -39,5 +39,5 @@ jobs:
       run: dotnet pack --configuration Release --no-restore --no-build --output . /p:Version=${VERSION}
 
     - name: Push Package to NuGet.org
-      run: dotnet nuget push Wal.Net.${VERSION}.nupkg -k ${{ secrets.NUGET_ORG_API_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push Gobi.Wal.Net.${VERSION}.nupkg -k ${{ secrets.NUGET_ORG_API_KEY }} -s https://api.nuget.org/v3/index.json
 

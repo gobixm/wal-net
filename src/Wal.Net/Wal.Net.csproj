@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageId>Wal.Net</PackageId>
+        <PackageId>Gobi.Wal.Net</PackageId>
         <Authors>Kirill Ivanov</Authors>
         <PackageTags>wal write ahead log transaction log</PackageTags>
     </PropertyGroup>
