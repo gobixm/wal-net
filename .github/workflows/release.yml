@@ -1,0 +1,43 @@
+name: release
+
+on:
+  push:
+    tags:
+    - "v[0-9]+.[0-9]+.[0-9]+"
+
+env:
+  DOTNET_VERSION: '7.0.202'
+
+jobs:
+  release:
+    defaults:
+      run:
+        working-directory: ./src
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Set VERSION variable from tag
+      run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+
+    - name: Install dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --configuration Release --no-restore /p:Version=${VERSION}
+    
+    - name: Test
+      run: dotnet test -configuration Release --no-restore --no-build --verbosity normal /p:Version=${VERSION} 
+      
+    - name: Pack
+      run: dotnet pack --configuration Release --no-restore --no-build --output . /p:Version=${VERSION}
+
+    - name: Push Package to NuGet.org
+      run: dotnet nuget push Wal.Net.${VERSION}.nupkg -k ${{ secrets.NUGET_ORG_API_KEY }} -s https://api.nuget.org/v3/index.json
+

@@ -4,10 +4,13 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <PackageId>Wal.Net</PackageId>
+        <Authors>Kirill Ivanov</Authors>
+        <PackageTags>wal write ahead log transaction log</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Standart.Hash.xxHash" Version="4.0.5" />
+        <PackageReference Include="Standart.Hash.xxHash" Version="4.0.5"/>
     </ItemGroup>
 
 </Project>
