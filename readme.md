@@ -1,5 +1,7 @@
 [![build and test](https://github.com/gobixm/wal-net/actions/workflows/build-and-test.yml/badge.svg?branch=master)](https://github.com/gobixm/wal-net/actions/workflows/build-and-test.yml)
 
+Simpe Write Ahead Log implementation.
+
 # Usage example
 ```csharp
 
