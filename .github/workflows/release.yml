@@ -33,7 +33,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore /p:Version=${VERSION}
     
     - name: Test
-      run: dotnet test -configuration Release --no-restore --no-build --verbosity normal /p:Version=${VERSION} 
+      run: dotnet test --configuration Release --no-restore --no-build --verbosity normal /p:Version=${VERSION} 
       
     - name: Pack
       run: dotnet pack --configuration Release --no-restore --no-build --output . /p:Version=${VERSION}
