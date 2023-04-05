@@ -7,10 +7,17 @@
         <PackageId>Gobi.Wal.Net</PackageId>
         <Authors>Kirill Ivanov</Authors>
         <PackageTags>wal write ahead log transaction log</PackageTags>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Standart.Hash.xxHash" Version="4.0.5"/>
+        <PackageReference Include="Standart.Hash.xxHash" Version="4.0.5" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="..\..\readme.md" Pack="True" PackagePath=".">
+        <Link>readme.md</Link>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
 </Project>
